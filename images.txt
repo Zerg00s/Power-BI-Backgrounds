@@ -1,2 +1,9 @@
-Four-two.svg
 Blank center.svg
+Four-2.svg
+Four-two.svg
+Four.svg
+Three-2.svg
+Three-two.svg
+Three.svg
+Two-Three.svg
+Two-two.svg

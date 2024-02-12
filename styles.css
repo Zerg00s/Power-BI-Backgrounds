@@ -1,17 +1,18 @@
-header{
+header {
     align-items: flex-start;
     display: flex;
-    font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 50px;    
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
 }
 
-header h1{
+header h1 {
     font-size: 48px;
     font-weight: 900;
-}   
+}
 
 .ml-custom {
-    margin-left: 5rem; /* Adjust this value as needed */
+    margin-left: 5rem;
+    /* Adjust this value as needed */
 }
 
 
@@ -20,11 +21,12 @@ footer img {
 }
 
 .container {
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-content: center;
 }
 
-#image-grid .row{
+#image-grid .row>div {
     margin-right: 0 !important;
+    margin-bottom: 30px !important
 }

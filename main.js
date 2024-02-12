@@ -13,7 +13,7 @@ function loadSvgFile(filePath) {
 fetch('images.txt')
     .then(response => response.text())
     .then(text => {
-        var images = text.split('\n');
+        var images = text.split('\n').filter(image => image.trim() !== ''); // Filter out empty rows
         var imageGrid = document.getElementById('image-grid');
         var row = document.createElement('div');
         row.className = 'row';
