@@ -1,0 +1,26 @@
+header{
+    align-items: flex-start;
+    display: flex;
+    font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;    
+}
+
+header h1{
+    font-size: 48px;
+    font-weight: 900;
+}   
+
+.ml-custom {
+    margin-left: 5rem; /* Adjust this value as needed */
+}
+
+
+footer img {
+    height: 32px;
+}
+
+.container {
+    display: flex;  
+    justify-content: center;
+    align-content: center;
+}
