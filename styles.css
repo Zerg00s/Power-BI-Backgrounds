@@ -24,3 +24,7 @@ footer img {
     justify-content: center;
     align-content: center;
 }
+
+#image-grid .row{
+    margin-right: 0 !important;
+}
