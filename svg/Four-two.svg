@@ -1,4 +1,5 @@
-<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
     <style id="style-tag">.primary { fill: #2c4698; } .secondary { fill: #e5432f; }.background { fill: #eeedf5; } .frame { fill: #f6f6f6; }</style>
     <g>
         <rect id="16:9" width="1280" height="720" class="background"></rect>
@@ -118,8 +119,8 @@
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_33_69" result="shape"></feBlend>
         </filter>
     </defs>
-<!-- Code injected by live-server -->
-<script>
+    <!-- Code injected by live-server -->
+    <script>
 	//   &lt;-- For SVG support
 	if ('WebSocket' in window) {
 		(function () {
@@ -155,5 +156,5 @@
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// 
-</script>
+    </script>
 </svg>

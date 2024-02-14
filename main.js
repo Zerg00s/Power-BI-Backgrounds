@@ -34,7 +34,20 @@ fetch('images.txt')
                         svgElement.classList.add('img-fluid');
                         svgElement.style.cursor = 'pointer';
                         svgElement.onclick = () => {
-                            document.getElementById('svgContainer').innerHTML = svgContent;
+                            let svgContainer =  document.getElementById('svgContainer');
+                            svgContainer.innerHTML = svgContent;
+                            // inject style tag as a first child inside svg if does not exist
+                            let svg = svgContainer.querySelector('svg');
+                            if (!svg.querySelector('style')) {
+                                console.log('style tag does not exist');
+
+                                var styleTag = document.createElement('style');
+                                styleTag.innerHTML = `
+                                   
+                                `;
+                                svg.insertBefore(styleTag, svg.firstChild);
+
+                            }
                             applyColors(); // Reapply colors to the new SVG
                         };
                     }
@@ -55,7 +68,7 @@ fetch('images.txt')
         console.error('Error fetching images list:', error);
     });
 
-    loadSvgFile('styles.svg');
+    // loadSvgFile('styles.svg');
 
 
     let applyColors = () => {
