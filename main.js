@@ -25,7 +25,7 @@ fetch('images.txt')
                 .then(response => response.text())
                 .then(svgContent => {
                     var imgContainer = document.createElement('div');
-                    imgContainer.className = 'svg-preview col-3'; // Adjust the column size as needed
+                    imgContainer.className = 'svg-preview col-sm-6 col-md-4 col-lg-2'; // Adjust the column size as needed
                     imgContainer.innerHTML = svgContent; // Set the SVG content directly
 
                     // Optional: Add a class or ID to the SVG for styling or manipulation

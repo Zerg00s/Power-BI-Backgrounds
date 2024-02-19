@@ -7,7 +7,7 @@
     <title>Power BI Backgrounds</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">   
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -21,7 +21,10 @@
 
     <!-- Header with larger left margin -->
     <header class="mb-4 ml-custom">
-        <h1>Power BI Backgrounds</h1>
+        <img id="logo-img" src="img/power-bi-logo.png" alt="Power BI Logo" class="header-logo" width="70">
+        <span id="header-text">Power BI Backgrounds</span>
+        <br><br>
+        <div id="subtitle"><i>Perfect SVG Power BI backgrounds for your reports</i></div>
     </header>
 
     <form onsubmit="return false;">
@@ -30,7 +33,7 @@
             <input type="color" id="primary-color" value="#007DC3" class="m-2">
             <input type="color" id="background-color" value="#EEEDF5" class="m-2">
             <input type="color" id="frame-color" value="#F6F6F6" class="m-2">
-            <button type="button" id="download-svg" class="btn btn-primary ml-4">Download SVG Background</button>
+            <button type="button" id="download-svg" class="btn btn-primary ml-4">Download Selected Background</button>
         </div>
     </form>
 
@@ -39,8 +42,7 @@
     </div>
 
 
-    <!-- SVG Container with larger left margin -->
-    <div class="ml-custom mb-3">
+    <div class="ml-custom mb-3" style="display: none;">
         <div id="svgContainer"></div>
     </div>
 
