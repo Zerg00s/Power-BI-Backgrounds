@@ -15,11 +15,11 @@ header h1 {
 
 
 #subtitle{
-    font-size: calc(2vw + 10px);
+    font-size: calc(1vw + 10px);
     font-weight: 500;
     position: relative;
     color: grey;
-    top: 10px;
+    top: calc(1vw);
 }
 
 .ml-custom {
@@ -28,10 +28,15 @@ header h1 {
 }
 
 #header-text{
-    font-size: calc(2vw + 20px);
+    font-size: calc(2vw + 15px);
     font-weight: 500;
     position: relative;
-    top: 10px;
+    top: calc(1vw);
+}
+
+#logo-img{
+    height: calc(2vw + 15px);
+    width: auto;
 }
 
 footer img {
