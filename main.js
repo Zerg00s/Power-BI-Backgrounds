@@ -25,7 +25,7 @@ fetch('images.txt')
                 .then(response => response.text())
                 .then(svgContent => {
                     var imgContainer = document.createElement('div');
-                    imgContainer.className = 'col-2'; // Adjust the column size as needed
+                    imgContainer.className = 'svg-preview col-3'; // Adjust the column size as needed
                     imgContainer.innerHTML = svgContent; // Set the SVG content directly
 
                     // Optional: Add a class or ID to the SVG for styling or manipulation
@@ -34,6 +34,15 @@ fetch('images.txt')
                         svgElement.classList.add('img-fluid');
                         svgElement.style.cursor = 'pointer';
                         svgElement.onclick = () => {
+                            // add class to the clicked svg
+                            svgElement.classList.add('selected');
+                            // remove class from the other svgs
+                            let svgs = document.querySelectorAll('.svg-preview svg');
+                            svgs.forEach(svg => {
+                                if (svg !== svgElement) {
+                                    svg.classList.remove('selected');
+                                }
+                            });
                             let svgContainer =  document.getElementById('svgContainer');
                             svgContainer.innerHTML = svgContent;
                             // inject style tag as a first child inside svg if does not exist

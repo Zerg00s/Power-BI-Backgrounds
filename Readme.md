@@ -2,7 +2,7 @@
 
 This open source project provides a simple and intuitive way to create customized backgrounds for Power BI reports. Users can select from a variety of layouts, choose their preferred color scheme, and download the background for use in their Power BI reports.
 
-[👉 Open Power BI Background Generator 👈](https://zerg00s.github.io/power-bi-backgrounds/index.html)
+[👉 Open Power BI Background Generator 👈](https://zerg00s.github.io/Power-BI-Backgrounds)
 
 
 ![Demo](img/demo.gif)
