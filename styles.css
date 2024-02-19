@@ -44,6 +44,9 @@ footer img {
     align-content: center;
 }
 
+#image-grid{
+    margin-right: 50px;
+}
 #image-grid .row>div {
     margin-right: 0 !important;
     margin-bottom: 30px !important
