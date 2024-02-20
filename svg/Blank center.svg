@@ -4,8 +4,8 @@
         <rect id="16:9" width="1280" height="720" class="background"/>
 
         <rect id="Rectangle 2" x="21" y="16" width="1238" height="687" rx="60" class="frame"/>
-        <path id="Vector 1" d="M1123.5 0L1109 16H1185.5L1200 0H1123.5Z"class="secondary"/>
-        <path id="Vector 2" d="M988.5 0L974 16H1050.5L1065 0H988.5Z"class="secondary"/>
+        <path id="Vector 1" d="M1123.5 0L1109 16H1185.5L1200 0H1123.5Z" class="secondary"/>
+        <path id="Vector 2" d="M988.5 0L974 16H1050.5L1065 0H988.5Z" class="secondary"/>
 
         <path id="Left-Vector" d="M86 259.003C84 221.5 35.918 226.569 21 184V558C33.7869 508.336 86 517.5 86 481.984V259.003Z" fill="#91CA66">
             <animate attributeName="fill" values="#91CA66; #FFD700; #91CA66" dur="3s" repeatCount="indefinite" />
@@ -13,7 +13,7 @@
 
         <rect id="Rectangle 9" x="158" y="90" width="1035" height="7" class="primary"/>
 
-        <path id="Vector 3" d="M261.5 703L247 720H323.5L338 703H261.5Z"class="secondary"/>
-        <path id="Vector 4" d="M125.5 703L111 720H187.5L202 703H125.5Z"class="secondary"/>
+        <path id="Vector 3" d="M261.5 703L247 720H323.5L338 703H261.5Z" class="secondary"/>
+        <path id="Vector 4" d="M125.5 703L111 720H187.5L202 703H125.5Z" class="secondary"/>
     </g>
 </svg>

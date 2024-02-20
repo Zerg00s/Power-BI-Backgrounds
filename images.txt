@@ -1,3 +1,8 @@
+16_9 Background-2.svg
+16_9 Background-3.svg
+16_9 Background-4.svg
+16_9 Background-5.svg
+16_9 Background.svg
 Blank center.svg
 Four-2.svg
 Four-two.svg

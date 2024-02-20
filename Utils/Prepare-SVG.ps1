@@ -7,6 +7,10 @@ foreach ($file in Get-ChildItem -Path svg\ -Filter *.svg) {
     $content = $content -replace 'fill="#E5432F"', 'class="secondary"'
     $content = $content -replace 'fill="#F6F6F6"', 'class="frame"'
     $content = $content -replace 'fill="#EEEDF5"', 'class="background"'
+
+    $content = $content -replace 'stroke="#2C4698"', 'class="primary-stroke"'
+    $content = $content -replace 'stroke="#E5432F"', 'class="secondary-stroke"'
+    
     # save changes
     Set-Content -Path $file.FullName -Value $content
 
