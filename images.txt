@@ -7,6 +7,8 @@ Blank center.svg
 Four-2.svg
 Four-two.svg
 Four.svg
+Reversed-1.svg
+Reversed-2.svg
 Three-2.svg
 Three-two.svg
 Three.svg
