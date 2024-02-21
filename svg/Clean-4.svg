@@ -1,6 +1,7 @@
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group">
 <rect id="16:9" width="1280" height="720" class="background"/>
+<rect id="Rectangle 29" x="879" y="79" width="116" height="44" fill="#5E40B1"/>
 <rect id="Rectangle 30" x="21" y="16" width="1238" height="687" rx="60" class="frame"/>
 <path id="Vector 7" d="M1123.5 0L1109 16H1185.5L1200 0H1123.5Z" class="secondary"/>
 <path id="Vector 8" d="M988.5 0L974 16H1050.5L1065 0H988.5Z" class="secondary"/>
@@ -9,17 +10,17 @@
 <path id="Vector 9" d="M261.5 703L247 720H323.5L338 703H261.5Z" class="secondary"/>
 <path id="Vector 10" d="M125.5 703L111 720H187.5L202 703H125.5Z" class="secondary"/>
 <g id="Rectangle 33" filter="url(#filter0_d_49_25)">
-<rect x="956" y="287" width="259" height="371" rx="33" class="primary"/>
+<rect x="921" y="287" width="294" height="371" rx="33" class="primary"/>
 </g>
 <g id="Rectangle 35" filter="url(#filter1_d_49_25)">
-<rect x="111" y="130" width="802" height="528" rx="33" fill="white"/>
+<rect x="111" y="130" width="768" height="528" rx="33" fill="white"/>
 </g>
 <g id="Rectangle 37" filter="url(#filter2_d_49_25)">
-<rect x="956" y="135" width="259" height="107" rx="33" fill="white"/>
+<rect x="921" y="135" width="294" height="107" rx="33" fill="white"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_d_49_25" x="952" y="287" width="267" height="379" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_49_25" x="917" y="287" width="302" height="379" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
@@ -29,7 +30,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_49_25"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_49_25" result="shape"/>
 </filter>
-<filter id="filter1_d_49_25" x="107" y="130" width="810" height="536" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d_49_25" x="107" y="130" width="776" height="536" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
@@ -39,7 +40,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_49_25"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_49_25" result="shape"/>
 </filter>
-<filter id="filter2_d_49_25" x="952" y="135" width="267" height="115" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_d_49_25" x="917" y="135" width="302" height="115" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>

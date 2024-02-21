@@ -1,6 +1,7 @@
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group">
 <rect id="16:9" width="1280" height="720" class="background"/>
+<rect id="Rectangle 29" x="879" y="79" width="116" height="44" fill="#5E40B1"/>
 <rect id="Rectangle 30" x="21" y="16" width="1238" height="687" rx="60" class="frame"/>
 <path id="Vector 7" d="M1123.5 0L1109 16H1185.5L1200 0H1123.5Z" class="secondary"/>
 <path id="Vector 8" d="M988.5 0L974 16H1050.5L1065 0H988.5Z" class="secondary"/>
