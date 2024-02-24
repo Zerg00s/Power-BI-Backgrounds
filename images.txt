@@ -11,6 +11,7 @@ Clean-4.svg
 Clean-5.svg
 Clean-6.svg
 Clean-7.svg
+Clean-8.svg
 Four-2.svg
 Four-two.svg
 Four.svg
