@@ -2,6 +2,7 @@
 16_9 Background-3.svg
 16_9 Background-4.svg
 16_9 Background-5.svg
+16_9 Background-blank.svg
 16_9 Background.svg
 Blank center.svg
 Clean-1.svg

@@ -13,81 +13,73 @@ function loadSvgFile(filePath) {
 fetch('images.txt')
     .then(response => response.text())
     .then(text => {
-        var images = text.split('\n').filter(image => image.trim() !== ''); // Filter out empty rows
-        var imageGrid = document.getElementById('image-grid');
-        var row = document.createElement('div');
-        row.className = 'row';
-        imageGrid.appendChild(row);
+        const images = text.split('\n').filter(image => image.trim() !== '');
+        const fetchPromises = images.map(image =>
+            fetch(`svg/${image}`).then(response => response.text())
+        );
 
-        images.forEach((image, index) => {
-            // Fetch each SVG file directly
-            fetch(`svg/${image}`)
-                .then(response => response.text())
-                .then(svgContent => {
+        Promise.all(fetchPromises)
+            .then(svgContents => {
+                var imageGrid = document.getElementById('image-grid');
+                var row = document.createElement('div');
+                row.className = 'row';
+                imageGrid.appendChild(row);
+
+                svgContents.forEach((svgContent, index) => {
                     var imgContainer = document.createElement('div');
-                    imgContainer.className = 'svg-preview col-sm-6 col-md-5 col-lg-4'; // Adjust the column size as needed
-                    imgContainer.innerHTML = svgContent; // Set the SVG content directly
+                    imgContainer.className = 'svg-preview col-sm-6 col-md-5 col-lg-4';
+                    imgContainer.innerHTML = svgContent;
 
-                    // Optional: Add a class or ID to the SVG for styling or manipulation
                     var svgElement = imgContainer.querySelector('svg');
                     if (svgElement) {
-                        svgElement.classList.add('img-fluid');
-                        svgElement.style.cursor = 'pointer';
+                        svgElement.classList.add('img-fluid', 'pointer');
                         svgElement.onclick = () => {
-                            // add class to the clicked svg
                             svgElement.classList.add('selected');
-                            // remove class from the other svgs
                             let svgs = document.querySelectorAll('.svg-preview svg');
                             svgs.forEach(svg => {
-                                if (svg !== svgElement) {
-                                    svg.classList.remove('selected');
-                                }
+                                if (svg !== svgElement) svg.classList.remove('selected');
                             });
-                            let svgContainer =  document.getElementById('svgContainer');
+                            let svgContainer = document.getElementById('svgContainer');
                             svgContainer.innerHTML = svgContent;
-                            // inject style tag as a first child inside svg if does not exist
+
                             let svg = svgContainer.querySelector('svg');
                             if (!svg.querySelector('style')) {
-                                console.log('style tag does not exist');
-
                                 var styleTag = document.createElement('style');
-                                styleTag.innerHTML = `
-                                   
-                                `;
+                                styleTag.innerHTML = ``; // Add necessary CSS here
                                 svg.insertBefore(styleTag, svg.firstChild);
-
                             }
-                            applyColors(); // Reapply colors to the new SVG
+
+                            applyColors(); // Call a function to reapply colors or perform other tasks
                         };
                     }
 
                     row.appendChild(imgContainer);
 
-                    // Call loadSvgFile against the first image
                     if (index === 0) {
-                        loadSvgFile(image);
+                        loadSvgFile(images[index]); // Assuming loadSvgFile is a defined function
                     }
-                })
-                .catch(error => {
-                    console.error('Error fetching SVG:', error);
                 });
-        });
+            })
+            .catch(error => {
+                console.error('Error processing SVGs:', error);
+            });
     })
     .catch(error => {
         console.error('Error fetching images list:', error);
     });
 
-    // loadSvgFile('styles.svg');
+
+// loadSvgFile('styles.svg');
 
 
-    let applyColors = () => {
-        var primaryColor = document.getElementById('primary-color').value;
-        var secondaryColor = document.getElementById('secondary-color').value;
-        var backgroundColor = document.getElementById('background-color').value;
-        var frameColor = document.getElementById('frame-color').value;
-    
-        // Define a global style for SVG color customization
-        var svgStyleContent = `
+let applyColors = () => {
+    var primaryColor = document.getElementById('primary-color').value;
+    var secondaryColor = document.getElementById('secondary-color').value;
+    var backgroundColor = document.getElementById('background-color').value;
+    var frameColor = document.getElementById('frame-color').value;
+
+    // Define a global style for SVG color customization
+    var svgStyleContent = `
             svg .primary { fill: ${primaryColor}; }
             svg .secondary { fill: ${secondaryColor}; }
             svg .primary-stroke { stroke: ${primaryColor}; }
@@ -95,16 +87,16 @@ fetch('images.txt')
             svg .background { fill: ${backgroundColor}; }
             svg .frame { fill: ${frameColor}; }
         `;
-    
-        // Get all the <style> tags on the page
-        var styleTags = document.getElementsByTagName('style');
-    
-        // Apply the svgStyleContent to each <style> tag
-        for (var i = 0; i < styleTags.length; i++) {
-            styleTags[i].innerHTML = svgStyleContent;
-        }
-    };
-    
+
+    // Get all the <style> tags on the page
+    var styleTags = document.getElementsByTagName('style');
+
+    // Apply the svgStyleContent to each <style> tag
+    for (var i = 0; i < styleTags.length; i++) {
+        styleTags[i].innerHTML = svgStyleContent;
+    }
+};
+
 
 applyColors();
 
