@@ -1,0 +1,11 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#F5F5F5"/>
+<g id="White-and-grey-Overlap">
+<rect id="16:9" width="1280" height="720" class="background"/>
+<rect id="Rectangle 43" width="297" height="720" fill="white"/>
+<rect id="Rectangle 45" x="297" y="92" width="983" height="165" class="primary"/>
+<rect id="Rectangle 46" x="322" y="209" width="441" height="301" rx="9" fill="white"/>
+<rect id="Rectangle 48" x="322" y="538" width="932" height="151" rx="9" fill="white"/>
+<rect id="Rectangle 47" x="789" y="209" width="465" height="301" rx="9" fill="white"/>
+</g>
+</svg>

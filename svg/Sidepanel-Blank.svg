@@ -1,0 +1,7 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#F5F5F5"/>
+<g id="Sidepanel-Blank">
+<path id="16:9" d="M0 35C0 15.67 15.67 0 35 0H1255C1268.81 0 1280 11.1929 1280 25V695C1280 708.807 1268.81 720 1255 720H25C11.1929 720 0 708.807 0 695V35Z" class="background"/>
+<path id="Rectangle 43" d="M0 27C0 12.0883 12.0883 0 27 0H114V720H26C11.6406 720 0 708.359 0 694V27Z" fill="white"/>
+</g>
+</svg>
